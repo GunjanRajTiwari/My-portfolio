@@ -1,5 +1,9 @@
 @import url('./global.css');
 
+section {
+  padding: 0 4%;
+}
+
 .title {
   padding: 2rem 0 1rem;
   text-align: center;
@@ -19,7 +23,6 @@
 .hero {
   min-height: 100vh;
   background: var(--light);
-  padding: 0 4%;
   transition: all 0.4s ease;
   border-radius: 0 0 60px 0;
 }
@@ -195,6 +198,53 @@ nav {
 }
 
 
+/**************************************/
+/******** Projects section ************/
+/**************************************/
+
+.project {
+  height: 100vh;
+  border-radius: 60px 0 60px 0;
+  background-color: var(--light);
+}
+
+/************************************/
+/******** Resume section ************/
+/************************************/
+
+.resume {
+  height: 100vh;
+}
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 0.5rem;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.skill svg {
+  height:50px;
+  width: 50px;
+}
+
+.cpp {
+  background-color: #ffeeee;
+}
+
+.js {
+  background-color: #ffffe0;
+}
+
 /***********************************/
 /******** Media Queries ************/
 /***********************************/
@@ -206,7 +256,7 @@ nav {
 }
 
 @media (min-width: 768px){
-  .hero {
+  section {
     padding: 0 12%;
   }
 
