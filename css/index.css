@@ -16,6 +16,24 @@ section {
   color: var(--dark);
 }
 
+.top {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 24px;
+  right: 12px;
+  background-color: var(--purple);
+  text-align: center;
+  padding: 15px 0 0;
+
+}
+
+.top svg {
+  height: 20px;
+  width: 20px;
+}
+
 /***********************************/
 /********* Hero Section ************/
 /***********************************/
@@ -190,7 +208,7 @@ nav {
 .about-text {
   font-size: 0.85rem;
   font-weight: 300;
-  width: 80%;
+  width: 85%;
   max-width: 360px;
   min-width: 230px;
   margin: 0.5rem auto;
@@ -214,11 +232,22 @@ nav {
 
 .resume {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-flex {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
 }
 
 .skills-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .skill {
@@ -273,5 +302,14 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     text-align: left;
+  }
+
+  .resume-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills-flex {
+    width: 50%;
   }
 }
