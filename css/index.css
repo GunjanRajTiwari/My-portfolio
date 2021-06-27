@@ -98,7 +98,7 @@ nav {
   padding: 130px;
   border-radius: 50%;
   background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 25%, var(--metal) 100%);
+  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
   transition: all 0.4s ease;
 }
 
@@ -110,7 +110,7 @@ nav {
   width: 100px;
   border-radius: 50%;
   background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 25%, var(--metal) 100%);
+  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 }
 
 .circle3 {
@@ -121,7 +121,7 @@ nav {
   width: 30px;
   border-radius: 50%;
   background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 25%, var(--metal) 100%);
+  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 }
 
 .circle4 {
@@ -136,7 +136,7 @@ nav {
   color: var(--dark);
   border-radius: 50%;
   background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 25%, var(--metal) 100%);
+  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
   font-weight: 500;
   font-size: 1.2rem;
   color: var(--white);
@@ -201,14 +201,14 @@ nav {
   width: 40%;
   max-width: 360px;
   min-width: 200px;
-  margin: 1rem auto;
+  margin: 0.2rem auto 1rem;
   border-radius: 12px;
 }
 
 .about-text {
   font-size: 0.85rem;
   font-weight: 300;
-  width: 85%;
+  width: 90%;
   max-width: 360px;
   min-width: 230px;
   margin: 0.5rem auto;
@@ -220,10 +220,38 @@ nav {
 /******** Projects section ************/
 /**************************************/
 
-.project {
-  height: 100vh;
+.projects {
+  min-height: 100vh;
   border-radius: 60px 0 60px 0;
   background-color: var(--light);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 5rem;
+  padding: 3rem 0;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.project {
+  /* background-color: var(--metal); */
+}
+
+.project img {
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+.project h3 {
+  font-weight: 500;
+}
+
+.project p {
+  font-size: 0.85rem;
+  font-weight: 300;
 }
 
 /************************************/
