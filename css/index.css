@@ -48,11 +48,11 @@ nav {
 	display: flex;
 	padding: 1rem 0;
 	justify-content: space-between;
-	font-size: 0.8rem;
+	font-size: 0.85rem;
 }
 
 .brand {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	color: var(--purple);
 }
@@ -339,6 +339,78 @@ nav {
 .work {
 	margin: 0.2rem auto;
 	font-size: 0.9rem;
+}
+
+/***********************************/
+/******** Footer Section ************/
+/***********************************/
+
+.footer {
+	background-color: var(--light);
+	min-height: 60vh;
+	border-radius: 60px 0 0 0;
+}
+
+.contact {
+	max-width: 720px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.contact > div {
+	padding: 1.2rem;
+	border-radius: 12px;
+	background-color: var(--white);
+	width: 280px;
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 1rem 0 0.5rem;
+}
+
+.contact a {
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.contact path {
+	fill: var(--dark);
+}
+
+.socials {
+	display: flex;
+	gap: 1rem;
+	margin: auto;
+	justify-content: center;
+	padding: 0.5rem 4%;
+}
+
+.social-icon {
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	background-color: var(--white);
+	box-shadow: var(--shadow);
+}
+
+.github path {
+	fill: var(--dark);
+}
+
+.social-icon svg {
+	height: 24px;
+	width: 24px;
+}
+
+.copyright {
+	font-size: 0.8rem;
+	font-weight: 300;
+	text-align: center;
+	color: var(--dark);
+	margin: 3rem 0 1rem;
 }
 
 /***********************************/
