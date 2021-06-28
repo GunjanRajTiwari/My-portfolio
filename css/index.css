@@ -16,6 +16,8 @@ section {
 	color: var(--dark);
 }
 
+/******** Extras ********/
+
 .top {
 	height: 40px;
 	width: 40px;
@@ -31,6 +33,48 @@ section {
 .top svg {
 	height: 20px;
 	width: 20px;
+}
+
+.color-change {
+	position: fixed;
+	height: 36px;
+	width: 36px;
+	overflow: hidden;
+	gap: 0.2rem;
+	top: 16%;
+	left: 0;
+	background-color: var(--white);
+	border-radius: 0 4px 4px 0;
+	box-shadow: var(--shadow);
+	transition: all 0.3s ease;
+}
+
+.color-change:hover {
+	height: 120px;
+}
+
+.color {
+	height: 20px;
+	width: 20px;
+	order: 1;
+	border-radius: 50%;
+	margin: 8px;
+}
+
+.purple {
+	background-color: hsl(235, 50%, 50%);
+}
+
+.red {
+	background-color: hsl(5, 50%, 50%);
+}
+
+.green {
+	background-color: hsl(120, 50%, 50%);
+}
+
+.orange {
+	background-color: hsl(300, 50%, 50%);
 }
 
 /***********************************/

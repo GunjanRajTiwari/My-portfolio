@@ -3,7 +3,7 @@
 :root {
 	--primary: 235;
 	--secondary: 214;
-	--purple: hsl(var(--primary), 48%, 50%);
+	--purple: hsl(var(--primary), 50%, 50%);
 	--dark: hsl(252, 4%, 27%);
 	--metal: hsl(var(--secondary), 15%, 69%);
 	--light: hsl(var(--secondary), 44%, 95%);
@@ -13,15 +13,12 @@
 }
 
 body.dark-theme {
-	--primary: 235;
-	--secondary: 214;
-	--purple: hsl(var(--primary), 48%, 60%);
+	--purple: hsl(var(--primary), 50%, 60%);
 	--metal: hsl(252, 4%, 27%);
 	--light: hsl(var(--secondary), 15%, 69%);
 	--white: hsl(var(--secondary), 25%, 25%);
 	--dark: hsl(120, 100%, 100%);
 	--shadow: 0 4px 16px hsla(var(--secondary), 15%, 69%, 0.25);
-	--poppins: "Poppins", sans-serif;
 }
 
 * {
