@@ -248,10 +248,6 @@ nav {
 	border-radius: 12px;
 }
 
-.project h3 {
-	font-weight: 500;
-}
-
 .project p {
 	font-size: 0.85rem;
 	font-weight: 300;
@@ -262,7 +258,7 @@ nav {
 /************************************/
 
 .resume {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	color: var(--dark);
@@ -280,12 +276,15 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	flex: 1 1 0;
+	max-width: 480px;
+	margin: 1rem;
 }
 
 .skill {
 	margin: 0.5rem;
-	height: 80px;
-	width: 80px;
+	height: 48px;
+	width: 48px;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -299,8 +298,47 @@ nav {
 }
 
 .skill svg {
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
+}
+
+.next,
+.express path {
+	fill: var(--dark);
+}
+
+/******* Experience ********/
+
+.experience {
+	margin: 0 1rem;
+	flex: 1 1 0;
+	max-width: 480px;
+}
+
+.work-item {
+	display: grid;
+	grid-template-columns: 3rem 1fr;
+	margin: 1rem 0;
+}
+
+.date {
+	font-size: 0.8rem;
+	margin-top: 0.2rem;
+}
+
+.position {
+	margin: 0;
+}
+
+.company {
+	font-size: 0.75rem;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.work {
+	margin: 0.2rem auto;
+	font-size: 0.9rem;
 }
 
 /***********************************/
@@ -315,7 +353,7 @@ nav {
 
 @media (min-width: 768px) {
 	section {
-		padding: 0 12%;
+		padding: 0 10%;
 	}
 
 	.circle1 {
@@ -347,5 +385,16 @@ nav {
 
 	.skills-flex {
 		width: 50%;
+		justify-content: start;
+	}
+
+	.skill {
+		height: 80px;
+		width: 80px;
+	}
+
+	.skill svg {
+		height: 50px;
+		width: 50px;
 	}
 }
