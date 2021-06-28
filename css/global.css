@@ -1,29 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
 
 :root {
-  --primary: 235;
-  --secondary: 214;
-  --purple: hsl(var(--primary),48%,50%);
-  --dark: hsl(252,4%,27%);
-  --metal: hsl(var(--secondary),15%,69%);
-  --light: hsl(var(--secondary),44%,95%);
-  --white: hsl(120,100%,100%);
-  --shadow: 0 4px 16px hsla(var(--secondary),15%,69%,0.25);
-  --poppins: 'Poppins', sans-serif;
+	--primary: 235;
+	--secondary: 214;
+	--purple: hsl(var(--primary), 48%, 50%);
+	--dark: hsl(252, 4%, 27%);
+	--metal: hsl(var(--secondary), 15%, 69%);
+	--light: hsl(var(--secondary), 44%, 95%);
+	--white: hsl(120, 100%, 100%);
+	--shadow: 0 4px 16px hsla(var(--secondary), 15%, 69%, 0.25);
+	--poppins: "Poppins", sans-serif;
+}
+
+body.dark-theme {
+	--primary: 235;
+	--secondary: 214;
+	--purple: hsl(var(--primary), 48%, 60%);
+	--metal: hsl(252, 4%, 27%);
+	--light: hsl(var(--secondary), 15%, 69%);
+	--white: hsl(var(--secondary), 25%, 25%);
+	--dark: hsl(120, 100%, 100%);
+	--shadow: 0 4px 16px hsla(var(--secondary), 15%, 69%, 0.25);
+	--poppins: "Poppins", sans-serif;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  overflow-x: hidden;
-  font-family: var(--poppins);
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: var(--poppins);
+	scroll-snap-type: y mandatory;
+	background-color: var(--white);
 }

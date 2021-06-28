@@ -1,37 +1,36 @@
-@import url('./global.css');
+@import url("./global.css");
 
 section {
-  padding: 0 4%;
+	padding: 0 4%;
 }
 
 .title {
-  padding: 2rem 0 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--purple);
+	padding: 2rem 0 1rem;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--purple);
 }
 
 .title span {
-  color: var(--dark);
+	color: var(--dark);
 }
 
 .top {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 24px;
-  right: 12px;
-  background-color: var(--purple);
-  text-align: center;
-  padding: 15px 0 0;
-
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 24px;
+	right: 12px;
+	background-color: var(--purple);
+	text-align: center;
+	padding: 15px 0 0;
 }
 
 .top svg {
-  height: 20px;
-  width: 20px;
+	height: 20px;
+	width: 20px;
 }
 
 /***********************************/
@@ -39,142 +38,144 @@ section {
 /***********************************/
 
 .hero {
-  min-height: 100vh;
-  background: var(--light);
-  transition: all 0.4s ease;
-  border-radius: 0 0 60px 0;
+	min-height: 100vh;
+	background: var(--light);
+	transition: all 0.4s ease;
+	border-radius: 0 0 60px 0;
 }
 
 nav {
-  display: flex;
-  padding: 1rem 0;
-  justify-content: space-between;
-  font-size: 0.8rem;
+	display: flex;
+	padding: 1rem 0;
+	justify-content: space-between;
+	font-size: 0.8rem;
 }
 
 .brand {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--purple);
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--purple);
 }
 
 .nav-links {
-  text-decoration: none;
-  color: var(--dark);
-  top: 0.4rem;
-  padding: 0.2rem 0.5rem;
-  transition: all 0.4s ease;
-  position: relative;
+	text-decoration: none;
+	color: var(--dark);
+	top: 0.4rem;
+	padding: 0.2rem 0.5rem;
+	transition: all 0.4s ease;
+	position: relative;
 }
 
 .nav-links:hover {
-  color : var(--purple);
-  font-weight: 600;
+	color: var(--purple);
+	font-weight: 600;
 }
 
 .nav-links::before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 6px;
-  border-radius: 80%;
-  background-color: var(--light);
-  display: inline-block;
-  margin-top: -0.8rem;
-  left: calc(50% - 3px);
-  transition: all 0.4s ease;
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	border-radius: 80%;
+	background-color: var(--light);
+	display: inline-block;
+	margin-top: -0.8rem;
+	left: calc(50% - 3px);
+	transition: all 0.4s ease;
 }
 
-.nav-links:hover::before{
-  background-color: var(--purple);
+.nav-links:hover::before {
+	background-color: var(--purple);
 }
 
 /******** Floating Circles *********/
 
 .circle1 {
-  left: calc(50% - 130px);
-  top: calc(50% - 130px);
-  position: absolute;
-  padding: 130px;
-  border-radius: 50%;
-  background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
-  transition: all 0.4s ease;
+	left: calc(50% - 130px);
+	top: calc(50% - 130px);
+	position: absolute;
+	padding: 130px;
+	border-radius: 50%;
+	background: var(--metal);
+	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	transition: all 0.4s ease;
 }
 
 .circle2 {
-  position: absolute;
-  top: 75%;
-  left: 10%;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	position: absolute;
+	top: 75%;
+	left: 10%;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: var(--metal);
+	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 }
 
 .circle3 {
-  position: absolute;
-  top: 12%;
-  left: calc(20% - 20px);
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	position: absolute;
+	top: 12%;
+	left: calc(20% - 20px);
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: var(--metal);
+	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 }
 
 .circle4 {
-  position: absolute;
-  top: 15%;
-  right: 10%;
-  height: 80px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--dark);
-  border-radius: 50%;
-  background: var(--metal);
-  background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: var(--white);
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--dark);
+	border-radius: 50%;
+	background: var(--metal);
+	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: var(--white);
+	cursor: pointer;
 }
 
 /******* Name and description tags *******/
 
 .intro {
-  position: absolute;
-  top: 28%;
-  width: 200px;
-  padding: 0.8rem;
-  text-align: center;
-  background-color: var(--white);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--purple);
+	position: absolute;
+	top: 28%;
+	width: 200px;
+	padding: 0.8rem;
+	text-align: center;
+	background-color: var(--white);
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: var(--purple);
 }
 
 .intro span {
-  font-size: 0.8rem;
-  display: inline-block;
-  color: var(--dark)
+	font-size: 0.8rem;
+	display: inline-block;
+	color: var(--dark);
 }
 
 .desc {
-  position: absolute;
-  top: 65%;
-  right: 4%;
-  width: 200px;
-  padding: 0.8rem;
-  text-align: center;
-  font-size: 0.9rem;
-  background-color: var(--white);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+	position: absolute;
+	top: 65%;
+	right: 4%;
+	width: 200px;
+	padding: 0.8rem;
+	text-align: center;
+	font-size: 0.9rem;
+	color: var(--dark);
+	background-color: var(--white);
+	border-radius: 12px;
+	box-shadow: var(--shadow);
 }
 
 /***********************************/
@@ -182,76 +183,78 @@ nav {
 /***********************************/
 
 .about {
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .about-flex {
-  flex-grow: 2;
+	flex-grow: 2;
+	color: var(--dark);
 }
 
 .about-flex span {
-  color: var(--purple);
-  font-weight: 500;
+	color: var(--purple);
+	font-weight: 500;
 }
 
 .avatar {
-  width: 40%;
-  max-width: 360px;
-  min-width: 200px;
-  margin: 0.2rem auto 1rem;
-  border-radius: 12px;
+	width: 40%;
+	max-width: 360px;
+	min-width: 200px;
+	margin: 0.2rem auto 1rem;
+	border-radius: 12px;
 }
 
 .about-text {
-  font-size: 0.85rem;
-  font-weight: 300;
-  width: 90%;
-  max-width: 360px;
-  min-width: 230px;
-  margin: 0.5rem auto;
-  line-height: 1.8;
+	font-size: 0.85rem;
+	font-weight: 300;
+	width: 90%;
+	max-width: 360px;
+	min-width: 230px;
+	margin: 0.5rem auto;
+	line-height: 1.8;
 }
-
 
 /**************************************/
 /******** Projects section ************/
 /**************************************/
 
 .projects {
-  min-height: 100vh;
-  border-radius: 60px 0 60px 0;
-  background-color: var(--light);
+	min-height: 100vh;
+	border-radius: 60px 0 60px 0;
+	background-color: var(--light);
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-gap: 5rem;
-  padding: 3rem 0;
-  max-width: 1080px;
-  margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	grid-gap: 5rem;
+	padding: 3rem 0;
+	max-width: 1080px;
+	margin: auto;
 }
 
-.project {
-  /* background-color: var(--metal); */
+.project a {
+	color: inherit;
+	text-decoration: none;
+	width: 200px;
 }
 
 .project img {
-  width: 100%;
-  box-shadow: var(--shadow);
-  border-radius: 12px;
+	width: 100%;
+	box-shadow: var(--shadow);
+	border-radius: 12px;
 }
 
 .project h3 {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .project p {
-  font-size: 0.85rem;
-  font-weight: 300;
+	font-size: 0.85rem;
+	font-weight: 300;
 }
 
 /************************************/
@@ -259,85 +262,90 @@ nav {
 /************************************/
 
 .resume {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: var(--dark);
 }
 
 .resume-flex {
-  flex-grow: 2;
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  justify-content: space-evenly;
+	flex-grow: 2;
+	display: flex;
+	align-items: center;
+	flex-direction: column-reverse;
+	justify-content: space-evenly;
 }
 
 .skills-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .skill {
-  margin: 0.5rem;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: var(--shadow);
+	margin: 0.5rem;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--shadow);
+	transition: all 0.4s ease;
+}
+
+.skill:hover {
+	background-color: var(--light);
 }
 
 .skill svg {
-  height:50px;
-  width: 50px;
+	height: 50px;
+	width: 50px;
 }
-
 
 /***********************************/
 /******** Media Queries ************/
 /***********************************/
 
-@media (min-width: 480px){
-  .circle1 {
-    padding: 150px
-  }
+@media (min-width: 480px) {
+	.circle1 {
+		padding: 150px;
+	}
 }
 
-@media (min-width: 768px){
-  section {
-    padding: 0 12%;
-  }
+@media (min-width: 768px) {
+	section {
+		padding: 0 12%;
+	}
 
-  .circle1 {
-    left: calc(50% - 180px);
-    top: calc(50% - 180px);
-    padding: 180px;
-  }
+	.circle1 {
+		left: calc(50% - 180px);
+		top: calc(50% - 180px);
+		padding: 180px;
+	}
 
-  .intro {
-    left: calc(50% - 250px);
-  }
+	.intro {
+		left: calc(50% - 250px);
+	}
 
-  .desc {
-    right: calc(50% - 250px)
-  }
+	.desc {
+		right: calc(50% - 250px);
+	}
 
-  .about-flex {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: left;
-  }
+	.about-flex {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: left;
+	}
 
-  .resume-flex {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	.resume-flex {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-  .skills-flex {
-    width: 50%;
-  }
+	.skills-flex {
+		width: 50%;
+	}
 }
