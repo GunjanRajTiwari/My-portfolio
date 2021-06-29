@@ -121,7 +121,7 @@ nav {
 	height: 6px;
 	width: 6px;
 	border-radius: 80%;
-	background-color: var(--light);
+	background-color: transparent;
 	display: inline-block;
 	margin-top: -0.8rem;
 	left: calc(50% - 3px);
@@ -132,13 +132,24 @@ nav {
 	background-color: var(--purple);
 }
 
+.hamburger {
+	position: absolute;
+	display: none;
+	top: 12px;
+	right: calc(4% + 20px);
+	z-index: 5;
+	font-size: 1.2rem;
+	color: var(--dark);
+	cursor: pointer;
+}
+
 /******** Floating Circles *********/
 
 .circle1 {
 	left: calc(50% - 130px);
 	top: calc(50% - 130px);
 	position: absolute;
-	padding: 130px;
+	padding: 150px;
 	border-radius: 50%;
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
@@ -230,11 +241,16 @@ nav {
 	padding: 0.8rem;
 	text-align: center;
 	font-size: 0.9rem;
-	color: var(--white);
+	color: white;
 	background-color: var(--purple);
 	border-radius: 12px;
 	box-shadow: var(--shadow);
 	text-decoration: none;
+	transition: all 0.4s ease;
+}
+
+.cta:hover {
+	box-shadow: 0 4px 20px 2px hsla(var(--primary), 50%, 60%, 0.4);
 }
 
 /***********************************/
@@ -482,9 +498,29 @@ nav {
 /******** Media Queries ************/
 /***********************************/
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
 	.circle1 {
-		padding: 150px;
+		padding: 130px;
+	}
+
+	.nav-items {
+		height: 100vh;
+		width: 60vw;
+		background-color: var(--metal);
+		position: fixed;
+		top: 0;
+		right: -60vw;
+		z-index: 3;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 1rem;
+		padding-top: 16%;
+		transition: all 0.4s ease;
+	}
+
+	.hamburger {
+		display: inline-block;
 	}
 }
 
@@ -534,4 +570,10 @@ nav {
 		height: 50px;
 		width: 50px;
 	}
+}
+
+/********* Strict ********/
+
+.slide {
+	right: 0;
 }
