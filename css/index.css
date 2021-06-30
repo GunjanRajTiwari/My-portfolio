@@ -143,6 +143,21 @@ nav {
 	cursor: pointer;
 }
 
+.counter {
+	position: absolute;
+	left: 1%;
+	bottom: 1%;
+	font-size: 0.7rem;
+	font-weight: 300;
+	color: var(--dark);
+	text-decoration: none;
+}
+
+.counter img {
+	width: 60px;
+	padding: 4px;
+}
+
 /******** Floating Circles *********/
 
 .circle1 {
