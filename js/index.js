@@ -28,7 +28,12 @@ hamburger.addEventListener("click", e => {
 });
 
 const counter = document.getElementById("counter");
-counter.setAttribute(
-	"src",
-	"https://hitwebcounter.com/counter/counter.php?page=7832010&style=0006&nbdigits=5&type=page&initCount=103"
-);
+
+async function loadCounter() {
+	await counter.setAttribute(
+		"src",
+		"https://hitwebcounter.com/counter/counter.php?page=7832010&style=0006&nbdigits=5&type=page&initCount=103"
+	);
+}
+
+loadCounter();
