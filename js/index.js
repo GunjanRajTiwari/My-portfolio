@@ -26,3 +26,9 @@ function removeSlide() {
 hamburger.addEventListener("click", e => {
 	navbar.classList.toggle("slide");
 });
+
+const counter = document.getElementById("counter");
+counter.setAttribute(
+	"src",
+	"https://hitwebcounter.com/counter/counter.php?page=7832010&style=0006&nbdigits=5&type=page&initCount=103"
+);
