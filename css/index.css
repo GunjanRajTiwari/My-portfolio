@@ -169,6 +169,7 @@ nav {
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 	transition: all 0.4s ease;
+	box-shadow: var(--shadow);
 }
 
 .circle2 {
@@ -180,6 +181,7 @@ nav {
 	border-radius: 50%;
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	box-shadow: var(--shadow);
 }
 
 .circle3 {
@@ -191,6 +193,7 @@ nav {
 	border-radius: 50%;
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
+	box-shadow: var(--shadow);
 }
 
 .circle4 {
@@ -210,6 +213,7 @@ nav {
 	font-size: 1.5rem;
 	color: #fffa;
 	cursor: pointer;
+	box-shadow: var(--shadow);
 }
 
 /******* Name and description tags *******/
