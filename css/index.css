@@ -168,8 +168,9 @@ nav {
 	border-radius: 50%;
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
-	transition: all 0.4s ease;
 	box-shadow: var(--shadow);
+	transform: scale(0.6);
+	animation: pop 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards;
 }
 
 .circle2 {
@@ -182,6 +183,8 @@ nav {
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 	box-shadow: var(--shadow);
+	transform: scale(0.6);
+	animation: pop 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards;
 }
 
 .circle3 {
@@ -194,6 +197,8 @@ nav {
 	background: var(--metal);
 	background: linear-gradient(135deg, var(--light) 20%, var(--metal) 100%);
 	box-shadow: var(--shadow);
+	transform: scale(0.6);
+	animation: pop 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards;
 }
 
 .circle4 {
@@ -214,6 +219,14 @@ nav {
 	color: #fffa;
 	cursor: pointer;
 	box-shadow: var(--shadow);
+	transform: scale(0.6);
+	animation: pop 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards;
+}
+
+@keyframes pop {
+	100% {
+		transform: scale(1);
+	}
 }
 
 /******* Name and description tags *******/
@@ -230,6 +243,8 @@ nav {
 	font-size: 1.2rem;
 	font-weight: 500;
 	color: var(--purple);
+	transform: translateX(-200px);
+	animation: slide 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards 0.5s;
 }
 
 .intro span {
@@ -250,6 +265,8 @@ nav {
 	background-color: var(--white);
 	border-radius: 12px;
 	box-shadow: var(--shadow);
+	transform: translateX(200px);
+	animation: slide 0.6s cubic-bezier(0.25, 0.1, 0.68, 1.51) forwards 0.5s;
 }
 
 .cta {
@@ -270,6 +287,12 @@ nav {
 
 .cta:hover {
 	box-shadow: 0 4px 20px 2px hsla(var(--primary), 50%, 60%, 0.4);
+}
+
+@keyframes slide {
+	100% {
+		transform: translateX(0);
+	}
 }
 
 /***********************************/
