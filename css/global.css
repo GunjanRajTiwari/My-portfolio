@@ -14,8 +14,8 @@
 
 body.dark-theme {
 	--purple: hsl(var(--primary), 50%, 60%);
-	--metal: hsl(252, 4%, 27%);
-	--light: hsl(var(--secondary), 15%, 69%);
+	--metal: hsl(252, 4%, 12%);
+	--light: hsl(var(--secondary), 15%, 20%);
 	--white: hsl(var(--secondary), 25%, 25%);
 	--dark: hsl(120, 100%, 100%);
 	--shadow: 0 4px 16px hsla(var(--secondary), 15%, 69%, 0.25);
